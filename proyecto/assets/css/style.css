@@ -1,0 +1,71 @@
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css";
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav#mainNav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    border-bottom: 1px solid transparent;
+    background-color: #FFF;
+ 
+}
+
+@media (width >=768px){
+    nav#mainNav {
+        background: transparent !important;
+    }
+    #mainNav a  {
+        color: #FFF;
+    }
+    
+}
+
+#mainHeader {
+    background-image: url(../img/game-console-6603120_1920.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
+    padding: 5rem 2rem;
+}
+@media (width >=776px){
+    #mainHeader {
+        padding: 7rem 0;
+    }
+}
+
+/* Listado de categorías */
+.categoria-lista i {
+    color: #8800AA
+}
+.categoria-lista h3 {
+    text-align: center;
+}
+.categoria-lista .card {
+    height: 100%;
+    margin-top: 5px;
+    transition: 1s all;
+}
+
+.categoria-lista a {
+    text-decoration: none;
+    color: #000;
+}
+.categoria-lista .card:hover {
+   background-color: #8800AA;
+}
+.categoria-lista .card:hover i,
+.categoria-lista .card:hover a {
+    color: #FFF;
+}
+
+footer i {
+    font-size: 1.5rem;
+}
